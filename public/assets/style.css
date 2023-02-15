@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    height: 100vh;
+}
+#chatbtn{
+    position: absolute;
+    right: 40px;
+    top: 87%;
+    outline: none;
+    cursor: pointer;
+}
+.chatbox{
+    /* height: 400px; */
+    width: 300px;
+    background-color: skyblue;
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 13%;
+    /* z-index: -1; */
+    transform: translateY(-50);
+    transition: 0.5s ease;
+}
+ .chatmessage{
+    top: 58%;
+    /* height: 100px; */
+    width: 350px;
+    background-color: skyblue;
+    display: block;
+    position: absolute;
+    right: 40px;
+
+    transform: translateY(-50);
+    transition: 0.5s ease;
+}
+.chatmessage.active{
+    display: none;
+    transition: 0.5 ease;
+}
+.chatbox.active{
+    display: block;
+    transition: 0.5 ease;
+}
+.circlebtn{
+            width: 80px;
+			height: 80px;
+			padding: 13px 18px;
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: center;
+}
+/* .chatmessage {
+  width: 180px;
+  height: auto;
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+  margin: 40px;
+} */
+.chatmessage.arrow-bottom:after {
+    font-size: larger;
+  content: " ";
+  position: absolute;
+  right: 30px;
+  bottom: -14px;
+  border-top: 15px solid #f5f6f7;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: none;
+}
+.chatbox.arrow-bottom:after {
+    font-size: larger;
+  content: " ";
+  position: absolute;
+  right: 30px;
+  bottom: -14px;
+  border-top: 15px solid #f5f6f7;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: none;
+}
+.noHover{
+    pointer-events: none;
+}
+.inputbox
+{
+    border: 0.5px solid gray;
+}
+.replybox{
+    /* height: 400px; */
+    width: 600px;
+    background-color: skyblue;
+    display: none;
+    position: absolute;
+    right: 25%;
+    top: 13%;
+    /* z-index: -1; */
+    transform: translateY(-50);
+    transition: 0.5s ease;
+}
+.replybox.active{
+    display: block;
+    transition: 0.5 ease;
+}
+.inviteagt{
+    height: 200px;
+     width: 200px;
+    background-color: skyblue;
+    display: block;
+    position: absolute;
+    right: 30%;
+    top: 5%;
+}
+
