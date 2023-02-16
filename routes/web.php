@@ -30,6 +30,12 @@ route::get('/signup', SignupComponent::class)->name('signup');
 route::get('/auth/google', [mainController::class, 'loginWithGoogle'])->name('google-login');
 route::any('/auth/google/callback', [mainController::class, 'callbackFromGoogle'])->name('google-callback');
 
+route::get('/auth/github', [mainController::class, 'loginWithGithub'])->name('github-login');
+route::any('/auth/github/callback', [mainController::class, 'callbackFromGithub'])->name('github-callback');
+
+route::get('/auth/facebook', [mainController::class, 'loginWithFacebook'])->name('facebook-login');
+route::any('/auth/facebook/callback', [mainController::class, 'callbackFromFacebook'])->name('facebook-callback');
+
 Route::group(['middleware' => ['logedUser']], function () {
     Route::get('user-profile', ProfileComponent::class)->name('user-profile');
     Route::get('/logout', [MainController::class, 'logout'])->name('logout');

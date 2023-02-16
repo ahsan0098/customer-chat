@@ -16,17 +16,22 @@
                                 <div
                                     class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                                     <p class="lead fw-normal mb-0 me-3">Sign in with</p>
-                                    {{-- <button type="button" class="btn btn-primary btn-floating mx-1">
+                                    <a href="{{ route('facebook-login') }}" type="button" class="btn btn-primary btn-floating mx-1">
                                         <i class="bi bi-facebook"></i>
-                                    </button>
+                                    </a>
 
                                     <button type="button" class="btn btn-primary btn-floating mx-1">
                                         <i class="bi bi-twitter"></i>
-                                    </button> --}}
+                                    </button>
+
+                                    <a href="{{ route('github-login') }}" type="button"
+                                        class="btn btn-primary btn-floating mx-1">
+                                        <i class="bi bi-github"></i>
+                                    </a>
 
                                     <a href="{{ route('google-login') }}" type="button"
                                         class="btn btn-primary btn-floating mx-1 btn-">
-                                        <i class="bi bi-google"> Login with google</i>
+                                        <i class="bi bi-google"></i>
                                     </a>
                                 </div>
 
