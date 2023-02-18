@@ -1,10 +1,4 @@
 <div>
-    {{-- @php
-        echo '<pre>';
-        print_r($chat_status);
-    @endphp --}}
-    {{-- @include('sweetalert::alert') --}}
-    {{ $alert }}
     <div class="container" style="margin-top: 25px;">
         <div class="row justify-content-center align-items-center p-0">
             <div class="card p-0">

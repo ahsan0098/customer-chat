@@ -5,7 +5,7 @@
                 <div class="form-container">
                     <div class="image-holder"></div>
                     <form method="post" wire:submit.prevent="SignUp">
-                        <h2 class="text-center"><strong>Create</strong> an account.</h2>
+                        <h2 class="text-center">Create an account.</h2>
                         <div class="form-group p-3">
                             <input class="form-control" type="text" name="name" wire:model="name"
                                 placeholder="Name">

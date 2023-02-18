@@ -28,13 +28,14 @@
                                             @foreach ($chat as $ct)
                                                 <div>
                                                     @if ($ct['sender_id'] == $me)
-                                                        <div class="d-flex flex-row justify-content-end ms-1">
+                                                        <div class="d-flex flex-row justify-content-end">
                                                             <p class="small p-2 mb-1 mt-1 rounded-3 ms-2"
                                                                 style="background-color: lightgreen">
                                                                 <strong>{{ $ct['sender']['name'] }}</strong><br>
                                                                 {{ $ct['message'] }}
                                                             </p>
-                                                            <img src="{{ asset('storage/user/' . $ct['sender']['image']) }}"
+                                                            <img class="ms-1"
+                                                                src="{{ asset('storage/user/' . $ct['sender']['image']) }}"
                                                                 alt="avatar 1" style="width: 45px; height: 100%;">
                                                         </div>
                                                     @elseif ($ct['sender']['type'] != 'ADM' && $ct['sender']['type'] != 'USR')
